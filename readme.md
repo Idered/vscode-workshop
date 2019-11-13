@@ -110,24 +110,22 @@ Extension: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
 ## Install direnv
 
-- 0. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- 1. `brew install direnv`
-- 2. `echo "source ~/.bashrc" >> ~/.profile`
-- 3. `source ~/.bashrc`
+1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. `brew install direnv`
+3. `echo "source ~/.bashrc" >> ~/.profile`
+4. `source ~/.bashrc`
 
 ## Install nvs
 
-`export NVS_HOME="$HOME/.nvs"`
-`git clone https://github.com/jasongin/nvs "$NVS_HOME"`
-`. "$NVS_HOME/nvs.sh" install`
-`nvs add node/lts`
-`nvs link lts`
+1. `export NVS_HOME="$HOME/.nvs"`
+2. `git clone https://github.com/jasongin/nvs "$NVS_HOME"`
+3. `. "$NVS_HOME/nvs.sh" install`
+4. `nvs add node/lts`
+5. `nvs link lts`
 
 ## Install lsd
 
-`brew install lsd`
-`brew tap homebrew/cask-fonts`
-`brew cask install font-hack-nerd-font`
-
-Add to VS Code settings:
-`"terminal.integrated.fontFamily": "Hack Nerd Font"`
+1. `brew install lsd`
+2. `brew tap homebrew/cask-fonts`
+3. `brew cask install font-hack-nerd-font`
+4. Add to VS Code settings: `"terminal.integrated.fontFamily": "Hack Nerd Font"`
