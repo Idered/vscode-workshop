@@ -1,0 +1,16 @@
+{
+  "name": "vscode-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Idered/vscode-workshop.git",
+  "author": "Kasper Mikiewicz <ideredpl@gmail.com>",
+  "license": "MIT",
+  "prettier": {
+    "bracketSpacing": false
+  },
+  "dependencies": {
+    "@types/react": "^16.9.11",
+    "react": "^16.11.0",
+    "typescript": "^3.7.2"
+  }
+}

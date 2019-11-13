@@ -1,0 +1,185 @@
+[
+  // = TERMINAL
+  // ===========================================================================
+  // Close terminal tab
+  {
+    "key": "ctrl+w",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.kill"
+  },
+  // Create new terminal tab
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  // Focus terminal on alt+` when editor is focused
+  {
+    "key": "alt+oem_3",
+    // "command": "macros.showTerminal",
+    // "command": "workbench.action.terminal.focus",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  // Focus next terminal window
+  {
+    "key": "alt+right",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  // Focus previous terminal window
+  {
+    "key": "alt+left",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  // Pressing ctrl+r in terminal will start listening for second key combination - we want to disable this
+  {
+    "key": "ctrl+r",
+    "command": "",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  // = EDITOR
+  // ===========================================================================
+  // Focus first editor window
+  {
+    "key": "alt+1",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  // Focus second editor window
+  {
+    "key": "alt+2",
+    "command": "workbench.action.focusSecondEditorGroup"
+  },
+  // Focus third editor window
+  {
+    "key": "alt+3",
+    "command": "workbench.action.focusThirdEditorGroup"
+  },
+  // Go to last edit location
+  {
+    "key": "shift+space",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  // = GIT
+  // ===========================================================================
+  // Push
+  {
+    "key": "ctrl+shift+enter",
+    "command": "gitlens.gitCommands",
+    "args": {
+      "command": "push"
+    }
+  },
+  // Rebase
+  {
+    "key": "ctrl+shift+r",
+    "command": "gitlens.gitCommands",
+    "args": {
+      "command": "rebase"
+    }
+  },
+  // Pull
+  {
+    "key": "alt+enter",
+    "command": "gitlens.gitCommands",
+    "args": {
+      "command": "pull"
+    }
+  },
+  // Merge chosen branch into current branch
+  {
+    "key": "ctrl+shift+m",
+    "command": "gitlens.gitCommands",
+    "args": {
+      "command": "merge"
+    }
+  },
+  // Soft undo commit
+  {
+    "key": "ctrl+shift+u",
+    "command": "git.undoCommit"
+  },
+  // Switch branch
+  {
+    "key": "ctrl+b",
+    "command": "gitlens.gitCommands",
+    "args": {
+      "command": "switch"
+    }
+  },
+  // View repository on GitHub
+  {
+    "key": "ctrl+shift+alt+g",
+    "command": "gitlens.openRepoInRemote"
+  },
+  // Commit
+  {
+    "key": "ctrl+enter",
+    "command": "macros.stageAndCommit"
+  },
+  // = FILES
+  // ===========================================================================
+  // Create new file
+  {
+    "key": "ctrl+n",
+    "command": "extension.simpleNewFile",
+    "when": "editorTextFocus"
+  },
+  // Open recent folder/workspace
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.openRecent",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+oem_1",
+    "command": "breadcrumbs.focusAndSelect"
+  },
+  // = NUMBERS
+  // ===========================================================================
+  {
+    "key": "ctrl+up",
+    "command": "editor.emmet.action.incrementNumberByOne"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "editor.emmet.action.decrementNumberByOne"
+  },
+  // = TEXT
+  // ===========================================================================
+  // To uppercase
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  // To lowercase
+  {
+    "key": "ctrl+k ctrl+shift+u",
+    "command": "editor.action.transformToLowercase"
+  },
+  // = VIEW
+  // ===========================================================================
+  {
+    "key": "ctrl+k ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  // = DISABLED
+  // ===========================================================================
+  {
+    "key": "ctrl+shift+oem_3",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.extension.togglePreview",
+    "when": "!terminalFocus"
+  }
+]
